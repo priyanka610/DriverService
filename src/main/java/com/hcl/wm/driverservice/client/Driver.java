@@ -1,0 +1,19 @@
+package com.hcl.wm.driverservice.client;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+/**
+ * This represents the driver instance
+ */
+@Document
+@Getter
+@Setter
+@ToString
+public class Driver {
+    private String driver_id;
+    private String pickedUpStatus;
+    private String deliveredStatus;
+}
